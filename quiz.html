@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script rel="text/javascript" src="js-jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div id="question-form">
+                <h6 class="question" id="question">Question</h6>
+                <div id="option" class="option">
+                    <button class="btn btn-outline-dark" id="a">Answer 1</button>
+                    <button class="btn btn-outline-dark" id="b">Answer 2</button>
+                    <button class="btn btn-outline-dark" id="c">Answer 3</button>
+                    <button class="btn btn-outline-dark" id="d">Answer 4</button>                
+                </div>
+            </div>
+            <div class="control px-2">
+                <button id="pre" class="btn btn-outline-success pre">Previous</button>
+                <button id="start" class="btn btn-outline-success start">Start</button>                
+                <button id="next" class="btn btn-outline-success next">Next</button>
+                <button id="submit" class="btn btn-outline-success submit">Submit</button>
+            </div>
+            <div class="result-container">
+                <p class="text-center">Congrats! You made it!</p>
+                <p class="text-center score-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
